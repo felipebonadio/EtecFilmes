@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EtecFilmes.Data
 {
-    public class Contexto : IdentityDbContext
+    public class Contexto : IdentityDbContext<User>
     {
         public Contexto(DbContextOptions<Contexto> options) : base(options)
         {
